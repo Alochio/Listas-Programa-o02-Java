@@ -1,0 +1,13 @@
+package principal;
+
+public class Main {
+	public static void main(String[] args){
+		
+		Midia midia = new Midia(10, 10.0, "teste");
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+package principal;
+
+public interface IFerramenta {
+
+	public Animal[] filtrarEspecie(Animal[] completo, String especieFiltrar);
+
+	public String[] classificarEspecies(Animal[] completo);
+}

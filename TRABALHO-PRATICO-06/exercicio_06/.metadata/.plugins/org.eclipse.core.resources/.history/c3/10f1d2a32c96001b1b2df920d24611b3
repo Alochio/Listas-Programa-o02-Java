@@ -1,0 +1,33 @@
+package estrutura;
+
+public class Automovel extends Veiculo{
+
+	private float velocidade;
+	private boolean estado;
+	
+	public float getVelocidade(){
+		return this.velocidade;
+	}
+	public boolean getEstado(){
+		return this.estado;
+	}
+	
+	public Automovel(){
+		
+	}
+	
+	public float acelerar(float velocidade){
+		this.velocidade = velocidade;
+		return velocidade;
+	}
+	
+	public void parar(){
+		if (velocidade == 0){
+			estado = false;
+		}
+		if (velocidade > 0){
+			estado = true;
+		}
+	}
+	
+}

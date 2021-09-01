@@ -1,0 +1,22 @@
+package principal;
+
+import loja.Midia;
+import loja.DVD;
+import loja.CD;
+import loja.Figura;
+
+public class Main {
+	public static void main(String[] args){
+		
+		Midia dvd = new DVD(01225,10.5,"DVD-Sertaneja-2021",15);
+		Midia cd = new CD(12358, 5.50, "CD-Musicas-Selecionadas", 12);
+		Figura fig = new Figura();
+		
+		dvd.printDados();
+		fig.printDetalhes(dvd.getTipo());
+		
+		
+		
+	}
+
+}

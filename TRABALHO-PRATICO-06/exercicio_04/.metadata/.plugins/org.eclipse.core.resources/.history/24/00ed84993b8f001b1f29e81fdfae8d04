@@ -1,0 +1,13 @@
+package loja;
+
+public class DVD extends Midia{
+	
+	private int nFaixas;
+	
+	public DVD(){
+		
+	}
+	
+	
+
+}

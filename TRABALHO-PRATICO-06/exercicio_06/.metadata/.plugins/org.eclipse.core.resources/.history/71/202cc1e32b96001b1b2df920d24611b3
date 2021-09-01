@@ -1,0 +1,15 @@
+package estrutura;
+
+public class Automovel extends Veiculo{
+
+	public float acelerar(float velocidade){
+		return velocidade;
+	}
+	
+	public void parar(){
+		
+	}
+	
+	
+	
+}

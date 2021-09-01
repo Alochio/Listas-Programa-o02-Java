@@ -1,0 +1,12 @@
+package estrutura;
+
+public abstract class Veiculo {
+	
+	public float acelerar(float velocidade){
+		return velocidade;
+	}
+	
+	public void parar(){
+		
+	}
+}

@@ -1,0 +1,20 @@
+package principal;
+
+import loja.Midia;
+import loja.DVD;
+import loja.CD;
+import loja.Figura;
+
+public class Main {
+	public static void main(String[] args){
+		
+		Midia cd = new DVD(15,10.5,"teste",15);
+		Figura fig = new Figura();
+		
+		cd.printDados();
+		
+		
+		
+	}
+
+}

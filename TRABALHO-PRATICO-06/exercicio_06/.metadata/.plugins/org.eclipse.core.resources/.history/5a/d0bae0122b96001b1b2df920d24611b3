@@ -1,0 +1,9 @@
+package estrutura;
+
+public class Automovel extends Veiculo{
+
+	
+	
+	
+	
+}

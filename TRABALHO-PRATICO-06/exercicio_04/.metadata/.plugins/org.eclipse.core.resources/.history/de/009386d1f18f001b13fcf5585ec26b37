@@ -1,0 +1,11 @@
+package loja;
+
+public class Loja implements iLoja {
+
+	@Override
+	public void printDetalhes(Object objeto) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
