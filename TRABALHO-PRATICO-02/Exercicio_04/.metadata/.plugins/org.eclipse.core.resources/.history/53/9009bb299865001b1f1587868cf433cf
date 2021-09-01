@@ -1,0 +1,40 @@
+package teste;
+
+public class Main {
+	public static void main(String[] args){
+		
+		País p1 = new País();
+//		País p2 = new País();
+		
+		p1.imprimeNumPais();
+		p1.criaPais();
+		
+		
+		double recebe = p1.densidadePopulacional(p1.getPopulacao(), p1.getDimensao());
+		
+		System.out.println(recebe);
+		
+		
+//		p1.declaraLimitrofe();
+		
+//		p1.fazLinha();
+		
+//		p2.imprimeNumPais();
+//		p2.criaPais();
+//		p2.declaraLimitrofe();
+		
+//		p1.fazLinha();
+		
+//		double recebe = p1.densidadePopulacional(p1.getPopulacao(), p1.getDimensao());
+//		p1.imprime(p1.getCodigoISO(), p1.getNome(),recebe , p1.getLimitrofes());
+		
+//		p1.fazLinha();
+		
+//		recebe = p2.densidadePopulacional(p2.getPopulacao(), p2.getDimensao());
+//		p2.imprime(p2.getCodigoISO(), p2.getNome(), recebe, p2.getLimitrofes());
+		
+//		p1.fazLinha();
+		
+//		p1.analizaLimitrofes(p1.getLimitrofes(),p1.getNome(), p2.getNome(), p2.getLimitrofes());
+	}
+}

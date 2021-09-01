@@ -1,0 +1,15 @@
+package principal;
+import principal.ClasseReta;
+
+
+public class Main {
+	public static void main(String[] args){
+		
+		ClasseReta r1 = new ClasseReta();
+		
+		r1.lerReta();
+		
+		
+	}
+
+}

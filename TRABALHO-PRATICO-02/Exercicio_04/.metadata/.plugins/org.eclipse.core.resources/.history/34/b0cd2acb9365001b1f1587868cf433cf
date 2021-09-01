@@ -1,0 +1,21 @@
+package teste;
+
+public class Main {
+	public static void main(String[] args){
+		
+		País p1 = new País();
+		País p2 = new País();
+		
+		p1.imprimeNumPais();
+		p1.criaPais();
+		p1.declaraLimitrofe();
+//		p1.densidadePopulacional();
+		
+		p2.imprimeNumPais();
+		p2.criaPais();
+		p2.declaraLimitrofe();
+		
+		p1.analizaimitrofes(p1.getNome(), p2.getLimitrofes());
+		
+	}
+}

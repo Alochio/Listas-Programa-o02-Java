@@ -1,0 +1,115 @@
+package principal;
+import java.util.Scanner;
+import java.math.*;
+
+public class ClasseReta {
+	
+	private double[] reta = new double[4];
+	private double[] reta2 = new double[4];
+	public double coefAng, coefLin, aux, aux1, aux2;
+	public String representReta;
+	
+	Scanner s1 = new Scanner(System.in);
+	
+	public void setReta(double[] reta){
+		this.reta = reta;
+	}
+	public double[] getReta(){
+		return this.reta;
+	}
+		
+	public void lerReta(){
+		System.out.println("Posição do ponto A da Reta");
+		System.out.print("X = ");
+		reta[0] = s1.nextDouble();
+		System.out.print("Y = ");
+		reta[1] = s1.nextDouble();
+		
+		System.out.println("Posição do ponto B da Reta");
+		System.out.print("X = ");
+		reta[2] = s1.nextDouble();
+		System.out.print("Y = ");
+		reta[3] = s1.nextDouble();
+		
+		aux  = reta[2] / reta[3];
+		System.out.println("\n" + aux);
+	}	
+	
+	
+	
+	public void lerReta2(){
+		aux2 = aux;
+		
+		System.out.println("Posição do ponto A da Reta");
+		System.out.print("X = ");
+		reta2[0] = s1.nextDouble();
+		System.out.print("Y = ");
+		reta2[1] = s1.nextDouble();
+		
+		System.out.println("Posição do ponto B da Reta");
+		System.out.print("X = ");
+		reta2[2] = s1.nextDouble();
+		System.out.print("Y = ");
+		reta2[3] = s1.nextDouble();
+		
+		aux1 = reta2[2] / reta2[3];
+		System.out.println("\n" + aux1);
+	}	
+	
+	public void coeficienteAngular(){
+		coefAng = (reta[3] - reta[1]) / (reta[2] - reta[0]);
+		System.out.println("O coeficiente angular da reta é = " + coefAng);
+	}
+	
+	public void coefLinear(){
+		coefLin = (coefAng * (reta[2] - reta[3]))*(-1);
+		System.out.println("O coeficiente linear da reta é = " + coefLin);
+	}
+
+
+	
+	public void comparaRetas(){
+		
+		double x = 0, y = 0, z = 0;
+		double w = 0, h = 0;
+		
+		x = aux2;
+		y = aux1;
+		
+		System.out.println("\n" + aux);
+		System.out.println(aux1);
+		
+		for(int cont = 0; cont < reta[2]; cont++){
+			
+			if(x == y){
+				w = cont;
+				h = x;
+				z++;
+				
+				x = x + aux2;
+				y = y + aux1;
+			}
+			else{
+				x = x + aux2;
+				y = y + aux1;
+			}
+		}
+		
+		if(z == 0){
+			System.out.println("As retas não possuem interseção!!");
+		}
+		if(z == 1){
+			System.out.println("Interseção = (" + w + "," + h + ")");
+		}
+		if(z > 1){
+			System.out.println("As retas são paralelas!!");
+		}
+	}
+	
+	public void representeReta(){
+		String.valueOf(coefAng);
+		String.valueOf(coefLin);
+		representReta = "Y = (" + coefAng + "X + " + coefLin + ")";	
+		System.out.println(representReta);
+	}
+}

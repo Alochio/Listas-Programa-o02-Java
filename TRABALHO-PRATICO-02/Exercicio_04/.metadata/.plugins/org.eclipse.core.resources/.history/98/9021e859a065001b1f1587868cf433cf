@@ -1,0 +1,113 @@
+package teste;
+import java.util.Scanner;
+
+public class País {
+	
+	private String codigoISO;
+	private String nome;
+	private double populacao;
+	private double dimensao;
+	public int a = 1;
+	private String[] limitrofes = new String[3];
+	
+	Scanner sc = new Scanner(System.in);
+	
+	public void setCodigoISO(String codigoISO){
+		this.codigoISO = codigoISO;
+	}
+	public String getCodigoISO(){
+		return this.codigoISO;
+	}
+	public void setNome(String nome){
+		this.nome = nome;
+	}
+	public String getNome(){
+		return this.nome;
+	}
+	public void setPopulacao(double populacao){
+		this.populacao = populacao;
+	}
+	public double getPopulacao(){
+		return this.populacao;
+	}
+	public void setDimensao(double dimensao){
+		this.dimensao = dimensao;
+	}
+	public double getDimensao(){
+		return this.dimensao;
+	}
+	
+	public void setLimitrofes(String[] limitrofes){
+		this.limitrofes = limitrofes;
+	}
+	public String[] getLimitrofes(){
+		return this.limitrofes;
+	}
+	
+	public void imprimeNumPais(){
+		System.out.print("Pais: " + a + "\n");
+		a++;
+	}
+	
+	public void criaPais(){
+//		System.out.print("Digite o código ISO do país: ");
+//		this.setCodigoISO(sc.next());
+//		System.out.print("Digite o nome do país: ");
+//		this.setNome(sc.next());
+		System.out.print("Digite a quantidade populacional do país, em milhões: ");
+		this.populacao = sc.nextDouble();
+		System.out.print("Digite o tamanho do país: ");
+		this.dimensao = sc.nextDouble();		
+	}
+	
+	public double densidadePopulacional(double pupulacao, double dimensao){
+		pupulacao = populacao *1000;
+		return populacao/dimensao;
+	}
+	
+	public void declaraLimitrofe(){
+		int aux = 1;
+		for(int cont = 0; cont < limitrofes.length; cont++){
+			System.out.print("Digite o " + aux + " país limitrofe: ");
+			limitrofes[cont] = sc.next();
+			aux++;
+		}
+	}
+	
+	public void analizaLimitrofes(String[] limitrofes1,String nome1, String nome2, String[] limitrofes2){
+		boolean aux = false;
+		
+		for (int cont = 0; cont < limitrofes1.length; cont++){
+			if (nome2.equals(limitrofes1[cont])){
+				aux = true;
+			}
+		}
+		for (int cont = 0; cont < limitrofes2.length; cont++){
+			if (nome1.equals(limitrofes2[cont])){
+				aux = true;
+			}
+		}
+		if (aux == true){
+			System.out.println("Os países são limitrofes. ");
+		}
+		else{
+			System.out.println("Os países não são limitrofes. ");
+		}
+	}
+	
+	public void imprime(String codigoIso, String nome, double densidadePopulacional, String[] limitrofes){
+		
+		System.out.println("Código ISO = " + codigoIso.toUpperCase());
+		System.out.println("Nome = " + nome);
+		System.out.print("Densidade populacional = " + densidadePopulacional + " pessoas por Km^2");
+		System.out.printf("%.2f", densidadePopulacional);
+		System.out.println("\nPaises Limitrofes: ");
+		for(int cont = 0; cont < limitrofes.length; cont++){
+			System.out.println(limitrofes[cont]);
+		}		
+	}
+	
+	public void fazLinha(){
+		System.out.println("---------------------------------------------------------");
+	}		
+}
