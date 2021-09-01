@@ -1,0 +1,16 @@
+package principal;
+
+public class Main {
+	public static void main(String[] args){
+		
+		Pessoa p1 = new Pessoa();
+		
+		p1.setNome("Rafael");
+		p1.setIdade(20);
+		
+		System.out.println("Informações da pessoa\n" 
+		+" nome: " + p1.getNome() + "\nIdade: " + p1.getIdade());
+		
+	}
+
+}

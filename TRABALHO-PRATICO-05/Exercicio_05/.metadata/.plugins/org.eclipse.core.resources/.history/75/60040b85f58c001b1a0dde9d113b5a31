@@ -1,0 +1,15 @@
+package principal;
+
+public class VIP extends Ingresso{
+	
+	private double valorAdicional = 5.00;
+
+	public Ingresso(double valor){
+		super(valor);
+		
+	}
+	
+	
+	 
+
+}

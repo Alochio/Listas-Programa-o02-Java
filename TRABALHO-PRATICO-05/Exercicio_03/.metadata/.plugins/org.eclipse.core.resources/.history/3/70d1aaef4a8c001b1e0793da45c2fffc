@@ -1,0 +1,36 @@
+package principal;
+
+public class Main {
+	public static void main(String[] args){
+		
+		
+		Restaurante r1 = new Restaurante("Retaurante", "Rua tal", "João Monlevade",
+				"Minas Gerais", "123456", "31999878747");
+		
+		System.out.println("Informações do Restaurante: \n");
+		
+		r1.printNome();
+		r1.printEndereco();
+		r1.printCidade();
+		r1.printEstado();
+		r1.printCep();
+		r1.printTelefone();
+		
+		System.out.println("-------------------------------------------------");
+		
+		r1.setCep("Massas");
+		r1.setPrecoMedio(12.55);
+		
+		r1.printTipoDeComida();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

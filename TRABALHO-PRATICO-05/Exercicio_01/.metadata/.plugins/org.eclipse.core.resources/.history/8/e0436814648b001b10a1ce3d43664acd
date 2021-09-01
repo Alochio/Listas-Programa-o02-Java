@@ -1,0 +1,38 @@
+package principal;
+
+public class Lampada {
+	
+	private double luminosidadeDaLampada;
+	private String estDaLampada;
+	
+	private void estadoDaLampada(double luminosidadeDaLampada){
+		
+		if(luminosidadeDaLampada == 0){
+			estDaLampada = "Apagada";
+		}
+		else if(luminosidadeDaLampada == 100){
+			estDaLampada = "Acesa";
+		}
+		else if(luminosidadeDaLampada > 0 || luminosidadeDaLampada <100){
+			estDaLampada = "Meia-Luz";
+		}
+	}
+	
+	
+	public void setLuminosidadeDaLampada(double luminosidadeDaLampada){
+		
+		if (luminosidadeDaLampada < 0 || luminosidadeDaLampada > 100){
+			this.luminosidadeDaLampada = luminosidadeDaLampada;
+		}
+		else{
+			System.out.println("Valor invalido!!");
+			System.out.println("Digite um valor de luminosidade entre 0 a 100");
+		}
+	}
+	public double getLuminosidadeDaLampada(){
+		return this.luminosidadeDaLampada;
+	}
+	
+	
+	
+}
