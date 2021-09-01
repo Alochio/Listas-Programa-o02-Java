@@ -1,0 +1,10 @@
+package principal;
+
+public class Postagem {
+
+	private Integer id;
+	private String titulo;
+	private String texto;
+	//criar data...
+	
+}

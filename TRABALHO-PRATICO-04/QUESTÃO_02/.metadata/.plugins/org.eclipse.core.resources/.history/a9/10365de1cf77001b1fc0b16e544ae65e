@@ -1,0 +1,24 @@
+package principal;
+import principal.Universidade;
+
+public class Departamento {
+
+	private String[] nome;
+	private String universidadeAssociada;
+
+	Universidade universidade;
+	
+	public String getNome(){
+		return []nome;
+	}
+	public void setNome(String[] nome){
+		this.nome = nome;
+	}
+	
+	public String getUniversidadeAssociada(){
+		return this.universidadeAssociada;
+	}
+	public void setUniversidadeAssociada(String universidadeAssociada){
+		this.universidadeAssociada = this.universidade.getNome();
+	}
+}

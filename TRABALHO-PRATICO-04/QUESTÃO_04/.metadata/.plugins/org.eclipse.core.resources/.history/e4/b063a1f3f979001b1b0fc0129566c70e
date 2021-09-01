@@ -1,0 +1,70 @@
+package principal;
+
+import java.util.Scanner;
+import java.util.Date;
+import java.text.DateFormat;
+
+public class Blog {
+
+	Scanner sc = new Scanner(System.in);
+	private Postagem postagens = new Postagem();
+	private static int tamVetor = 0;
+	private static int cont = 0;
+	private static int cont2 = 0;
+
+	public void adcionarPostagem(Postagem postagem) {
+
+		tamVetor = tamVetor + 1;
+		
+		System.out.println("\tCRIANDO POSTAGEM: \n");
+
+		System.out.print("Titulo: ");
+		postagem.setTitulo(sc.next());
+
+		System.out.print("Texto: \n");
+		postagem.setTexto(sc.next());
+
+		Date data = new Date();
+		DateFormat date = DateFormat.getDateInstance(DateFormat.SHORT);
+		System.out.println("Data: " + data);
+
+		postagem.setId(0);
+		this.postagens.setTitulo(postagem.getTitulo());
+		this.postagens.setTexto(postagem.getTexto());
+		this.postagens.setData(postagem.getData());
+		
+		listarTodasAsPostagens();
+		
+	}
+
+	public void publicarPostagem(Postagem postagem) {
+
+		postagem.setId(1);
+
+		this.postagens.setTitulo(postagem.getTitulo());
+		this.postagens.setTexto(postagem.getTexto());
+		this.postagens.setData(postagem.getData());
+
+	}
+
+	public void listarPostagensPublicadas() {
+
+	
+	}
+
+	public void listarTodasAsPostagens() {
+
+		String[] aux = new String[tamVetor];
+		aux[cont2] = this.postagens.getTitulo();
+		cont2 = cont2 + 1;
+	}
+
+	public void apagarPostagem(Postagem postagem) {
+
+		postagem.setTitulo(null);
+		postagem.setTexto(null);
+		postagem.setId(null);
+		postagem.setData(null);
+	}
+
+}

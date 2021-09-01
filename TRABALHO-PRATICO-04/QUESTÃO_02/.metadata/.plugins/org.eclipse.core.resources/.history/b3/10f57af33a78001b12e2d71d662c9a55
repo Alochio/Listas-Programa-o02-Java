@@ -1,0 +1,71 @@
+package principal;
+
+import principal.Departamento;
+
+public class Universidade {
+
+// VARIAVEIS DA CLASSE
+	private String nome, endereco;
+
+	private static int cont = 0;
+
+	
+//----------------------------------------------------------------------------------------
+	
+	
+	private String[] vetor = new String[10];
+	
+	public String[] getVetor(int num){
+		return []vetor;
+	}
+	public void setVetor(String[] vetor){
+		this.vetor = vetor;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//----------------------------------------------------------------------------------------
+// ASSOCIANDO UNIVERSIDADE A DEPARTAMENTO
+	private Departamento departamento;
+
+	public String getNome() {
+		return this.nome;
+	}
+
+	public String getEndereco() {
+		return this.endereco;
+	}
+// GET AND SET DO DEPARTAMENTO ASSOCIADO A UNIVERSIDADE
+//---------------------------------------------------------------------------------------------------------------
+	
+	
+	 public Departamento getDepartamento(){
+		 return this.departamento;
+ 	}
+	public void setDepartamento(Departamento departamento) {
+		if (cont < 50) {
+			this.departamento = departamento;
+			cont = cont + 1;
+		} else
+			System.out.println("A universidade já posssui mais de " + cont + " departamentos!");
+	}
+	
+//----------------------------------------------------------------------------------------------------------------
+
+// CONSTRUTOR DA UNIVERSIDADE
+	public Universidade(String nome, String endereco) {
+		this.nome = nome;
+		this.endereco = endereco;
+	}
+}

@@ -1,0 +1,21 @@
+package controleDePedidos;
+import controleDePedidos.*;
+
+public class Main{
+	public static void main(String[] args){
+				
+		Produto mouse = new Produto(123, 90, "Mouse_marcaXXX");
+		Produto teclado = new Produto (124, 120, "Teclado_MarcaXXX");
+		Produto headset = new Produto (125, 299, "FoneHeadset_MarcaXXX");
+		Produto capaCelular = new Produto (002, 10, "capaCelular_MarcaXXX");
+		
+		
+
+
+
+		
+	
+		
+	}
+	
+}

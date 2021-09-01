@@ -1,0 +1,95 @@
+package principal;
+import principal.Pessoa;
+import principal.Universidade;
+import principal.Departamento;
+
+public class Main {
+	public static void main(String[] args){
+
+//PESSOAS CRIADAS UTILIZANDO UM CONTRUTOR
+	Pessoa pessoa01 = new Pessoa("Albert", "Einstein","Professor de Física", 14, 03, 1879);
+	Pessoa pessoa02 = new Pessoa("Isaac", "Newton", "Professor de Matematica", 04, 01, 1643);
+		
+//UNIVERSIDADES CRIADAS UTILIZANDO UM CONSTRUTOR
+	Universidade universidade01 = new Universidade("Princeton", "Nova Jersey - Estados Unidos da América");
+	Universidade universidade02 = new Universidade("Cambridge", "Inglaterra");
+	
+//ATRIBUINDO UNIVERSIDADE A PESSOA USANDO ASSOCIAÇÃO
+	pessoa01.setUniversidade(universidade01);
+	pessoa02.setUniversidade(universidade02);	
+	
+//CRIANDO DEPARTAMENTOS
+	Departamento departamento01 = new Departamento();
+	departamento01.setNome("Exatas");
+//	
+//	Departamento departamento02 = new Departamento();
+//	departamento02.setNome("Humanas");
+//	
+//	Departamento departamento03 = new Departamento();
+//	departamento03.setNome("Eletrica");
+//	
+//	Departamento departamento04 = new Departamento();
+//	departamento04.setNome("Biologicas");
+//	
+//	Departamento departamento05 = new Departamento();
+//	departamento05.setNome("Natureza");
+//	
+//	Departamento departamento06 = new Departamento();
+//	departamento06.setNome("Sistemas");
+//	
+//ATRIBUINDO DEPARTAMENTOS A UNIVERSIDADE
+//	universidade01.setDepartamento(departamento01);
+//	universidade01.setDepartamento(departamento02);
+//	universidade01.setDepartamento(departamento03);
+//	universidade01.setDepartamento(departamento04);
+//	universidade01.setDepartamento(departamento05);
+//	universidade01.setDepartamento(departamento06);
+	
+//ATRIBUINDO UM DEPARTAMENTO A CADA PESSOA
+	pessoa01.setDepartamento(departamento01);
+	pessoa02.setDepartamento(departamento01);
+	
+	
+//IMPRIMINDO TODOS OS DEPARTAMENTOS ATRIBUIDOS A UNIVERSIDADE
+	//System.out.println("Departamentos da Universidade: ");
+	
+	//System.out.println(universidade01.getNome() + " : " + universidade01.getDepartamento().getNome());
+	
+//IMPRIMINDO DEPARTAMENTO DAS PESSOAS
+	//System.out.println("Departamento das Pessoas: ");
+
+	//System.out.println(pessoa01.getNome() + " : " + pessoa01.getDepartamento().getNome());
+	//System.out.println(pessoa02.getNome() + " : " + pessoa02.getDepartamento().getNome());
+	
+	
+	
+	
+//----------------------------------------------------------------------------------------
+	
+	String[] vet = new String[10];
+	
+	vet[0] = "teste";
+	vet[1] = "teste2";
+	vet[2] = "teste3";
+	vet[3] = "teste4";
+	vet[4] = "teste5";
+	
+	universidade01.setVetor(vet);
+	
+	
+	System.out.println(universidade01.getVetor(0));
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+//----------------------------------------------------------------------------------------	
+	
+	}
+}

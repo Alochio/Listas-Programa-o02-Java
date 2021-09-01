@@ -1,0 +1,30 @@
+package controleDePedidos;
+
+
+public class Main{
+	public static void main(String[] args){
+				
+		Produto mouse = new Produto(123, 90.00f , "Mouse_marcaXXX");
+		Produto teclado = new Produto (124, 120.00f , "Teclado_MarcaXXX");
+		Produto headset = new Produto (125, 199.99f , "FoneHeadset_MarcaXXX");
+		Produto capaCelular = new Produto (002, 10.50f , "capaCelular_MarcaXXX");
+		
+		System.out.println(teclado.getValor());
+		
+		ItemPedido item01 = new ItemPedido(mouse, 1);
+		ItemPedido item02 = new ItemPedido(teclado, 1);
+		ItemPedido item03 = new ItemPedido(headset, 1);
+		ItemPedido item04 = new ItemPedido(capaCelular, 1);
+		
+		Pedido pedido01 = new Pedido();
+		
+		pedido01.adiciona_item(item01);
+		pedido01.adiciona_item(item02);
+		pedido01.adiciona_item(item03);
+		pedido01.adiciona_item(item04);
+
+		
+		
+	}
+	
+}

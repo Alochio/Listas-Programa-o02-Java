@@ -1,0 +1,27 @@
+package principal;
+import principal.Pessoa;
+import principal.Universidade;
+
+public class Main {
+	public static void main(String[] args){
+		
+	Pessoa pessoa01 = new Pessoa("Albert", "Einstein","Professor de Física", 14, 03, 1879);
+	Pessoa pessoa02 = new Pessoa("Isaac", "Newton", "Professor de Matematica", 04, 01, 1643);
+		
+	Universidade universidade01 = new Universidade("Princeton", "Nova Jersey - Estados Unidos da América");
+	Universidade universidade02 = new Universidade("Cambridge", "Inglaterra");
+	
+	pessoa01.setUniversidade(universidade01);
+	pessoa02.setUniversidade(universidade02);	
+	
+	System.out.println(pessoa01.getSobrenome() + " trabalhou como " + pessoa01.getProfissao() + " em " + 
+			pessoa01.getUniversidade().getNome() + " ("+ pessoa01.getUniversidade().getEndereco() + ") ");
+
+	System.out.println(pessoa02.getSobrenome() + " trabalhou como " + pessoa02.getProfissao() + " em " + 
+			pessoa02.getUniversidade().getNome() + " ("+ pessoa02.getUniversidade().getEndereco() + ") ");	
+	
+	System.out.print(teste());
+	teste();
+	
+ }
+}

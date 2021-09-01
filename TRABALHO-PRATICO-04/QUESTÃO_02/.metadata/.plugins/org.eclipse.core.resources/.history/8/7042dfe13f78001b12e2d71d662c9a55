@@ -1,0 +1,35 @@
+package principal;
+
+import principal.Departamento;
+
+public class Universidade {
+
+	private String nome, endereco;
+	private static int cont = 0;
+	private Departamento[] departamento = new Departamento[50];
+
+	public String getNome() {
+		return this.nome;
+	}
+
+	public String getEndereco() {
+		return this.endereco;
+	}
+
+	public Departamento getDepartamento(int num) {
+		return this.departamento[num];
+	}
+
+	public void setDepartamento(Departamento[] departamento) {
+		if (cont < 50) {
+			this.departamento = departamento;
+			cont = cont + 1;
+		} else
+			System.out.println("A universidade já posssui mais de " + cont + " departamentos!");
+	}
+
+	public Universidade(String nome, String endereco) {
+		this.nome = nome;
+		this.endereco = endereco;
+	}
+}

@@ -1,0 +1,19 @@
+package controleDePedidos;
+import controleDePedidos.ItemPedido;
+
+public class Pedido {
+
+	private float valor_total;
+	
+	public double getValor_total(){
+		return this.valor_total;
+	}
+	
+	public ItemPedido adicionar_item(ItemPedido item_pedido){
+		return item_pedido;
+	}
+	public float obter_total(ItemPedido item_pedido){
+		return valor_total = item_pedido.getProduto().getValor() * 
+				item_pedido.getQuantidade();
+	}
+}

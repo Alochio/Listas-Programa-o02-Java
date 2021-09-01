@@ -1,0 +1,34 @@
+package controleDePedidos;
+
+import java.text.DecimalFormat;
+
+public class Main{
+	public static void main(String[] args){
+				
+		Produto mouse = new Produto(123, 90.00f , "Mouse_marcaXXX");
+		Produto teclado = new Produto (124, 120.00f , "Teclado_MarcaXXX");
+		Produto headset = new Produto (125, 199.99f , "FoneHeadset_MarcaXXX");
+		Produto capaCelular = new Produto (002, 10.50f , "capaCelular_MarcaXXX");
+		
+		ItemPedido item01 = new ItemPedido(mouse, 1);
+		ItemPedido item02 = new ItemPedido(teclado, 1);
+		ItemPedido item03 = new ItemPedido(headset, 1);
+		ItemPedido item04 = new ItemPedido(capaCelular, 1);
+		
+		Pedido pedido01 = new Pedido();
+		
+		pedido01.adiciona_item(item01);
+		pedido01.adiciona_item(item02);
+		pedido01.adiciona_item(item03);
+		pedido01.adiciona_item(item04);
+
+		
+		DecimalFormat df = new DecimalFormat();
+	    df.setMinimumFractionDigits(2);
+	    df.setMaximumFractionDigits(2);
+	    
+		System.out.println(df.format(pedido01.getValor_total()));
+		
+	}
+	
+}

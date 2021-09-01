@@ -1,0 +1,16 @@
+package controleDePedidos;
+
+
+public class Pedido {
+
+	private float valor_total;
+	
+	public double getValor_total(){
+		return this.valor_total;
+	}
+	
+
+
+
+
+}

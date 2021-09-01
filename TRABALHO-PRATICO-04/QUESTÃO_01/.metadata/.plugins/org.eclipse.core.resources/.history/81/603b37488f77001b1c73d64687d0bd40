@@ -1,0 +1,33 @@
+package principal;
+import principal.Universidade;
+import principal.DataDeNascimento;
+
+public class Pessoa {
+	
+	private String nome;
+	private String sobrenome;
+	private String profissao;
+	
+	
+	Universidade universidade;
+	DataDeNascimento dataDeNascimento;
+	
+	public String getNome(){
+		return this.nome;
+	}
+	public String getSobrenome(){
+		return this.sobrenome;
+	}
+	public String getProfissao(){
+		return this.profissao;
+	}
+	
+	public Pessoa(String nome, String sobrenome, String profissao,int dia, int mes, int ano, DataDeNascimento dataDeNascimento){
+		this.nome = nome;
+		this.sobrenome = sobrenome;
+		this.profissao = profissao;
+		dataDeNascimento.setDia(dia);
+		dataDeNascimento.setMes(mes);
+		dataDeNascimento.setAno(ano);
+	}
+}

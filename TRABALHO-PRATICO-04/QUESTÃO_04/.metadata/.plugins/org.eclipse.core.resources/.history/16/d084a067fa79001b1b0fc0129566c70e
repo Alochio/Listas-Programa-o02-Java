@@ -1,0 +1,30 @@
+package principal;
+
+public class Main {
+	public static void main(String[] args){
+		
+		Blog blog = new Blog();
+		
+		Postagem postagem01 = new Postagem();
+		Postagem postagem02 = new Postagem();
+		
+		blog.adcionarPostagem(postagem01);
+		blog.adcionarPostagem(postagem02);
+		
+		blog.publicarPostagem(postagem01);
+		blog.publicarPostagem(postagem02);
+		
+		System.out.println("-----------------------------------------");
+		
+		blog.listarTodasAsPostagens(1);
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

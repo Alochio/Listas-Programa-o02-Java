@@ -1,0 +1,17 @@
+package principal;
+
+public class Universidade {
+	
+	private String nome;
+	
+	public String getNome(){
+		return this.nome;
+	}
+	
+	public Universidade(String nome){
+		if (nome != null)
+			System.out.println("A pessoa já está associada a uma Universidade");
+		else
+			this.nome = nome;
+	}	
+}

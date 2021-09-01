@@ -1,0 +1,16 @@
+package controleDePedidos;
+import controleDePedidos.*;
+
+public class Pedido {
+	public static void main(String[] args) {
+
+	Pedido pedido01 = new Pedido();
+	
+	Produto mouse = new Produto(123, 100.00, "Mouse_marcaX");
+	Produto teclado = new Produto(124, 150.00, "Teclado_marcaX");
+	Produto headset = new Produto(125, 199.99, "Headset_marcaX");
+	
+	
+	
+	}
+}

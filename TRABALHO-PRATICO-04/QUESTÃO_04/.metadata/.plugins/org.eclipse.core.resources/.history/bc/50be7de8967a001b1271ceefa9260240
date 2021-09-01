@@ -1,0 +1,47 @@
+package principal;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+		Usuario user01 = new Usuario(001, "Vinicius", "user01", "senhaforte");
+		
+		
+		Scanner sc = new Scanner(System.in);
+		String analizaUser;
+		String analizaSenha;
+		
+		System.out.println("Usuario: ");
+		analizaUser = sc.next();
+		System.out.println("Senha: ");
+		analizaSenha = sc.next();
+
+		if (user01.getLogin().equals(analizaUser) && user01.getSenha().equals(analizaSenha)) {
+			
+			Blog blog = new Blog();
+
+			Postagem postagem01 = new Postagem();
+			Postagem postagem02 = new Postagem();
+			Postagem postagem03 = new Postagem();
+
+			blog.adcionarPostagem(postagem01);
+			blog.listarTodasAsPostagens(0);
+			blog.adcionarPostagem(postagem02);
+			blog.listarTodasAsPostagens(0);
+			blog.adcionarPostagem(postagem03);
+			blog.listarTodasAsPostagens(0);
+
+			blog.publicarPostagem(postagem01);
+			blog.listarPostagensPublicadas(0);
+			blog.publicarPostagem(postagem02);
+			blog.listarPostagensPublicadas(0);
+
+			blog.listarPostagensPublicadas(1);
+			blog.listarTodasAsPostagens(1);
+
+		}else{
+			System.out.println("Usuario não encontrado!!");
+		}
+	}
+}

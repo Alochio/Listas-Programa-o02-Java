@@ -1,0 +1,47 @@
+package principal;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args){
+		
+//-----------------------------------------------------------------------------
+//		String analizaUser;
+//		String analizaSenha;
+//		
+//		Usuario user01 = new Usuario(001, "Vinicius", "user01", "senhaforte");
+//		Scanner sc = new Scanner(System.in);
+//		
+//		System.out.println("Usuario: ");
+//		analizaUser = sc.next();
+//		System.out.println("Senha: ");
+//		analizaSenha = sc.next();
+		
+//-----------------------------------------------------------------------------		
+		
+		Blog blog = new Blog();
+		
+		Postagem postagem01 = new Postagem();
+		Postagem postagem02 = new Postagem();
+		
+		blog.adcionarPostagem(postagem01);
+		blog.adcionarPostagem(postagem02);
+		
+		blog.publicarPostagem(postagem01);
+		//blog.listarPostagensPublicadas();
+		blog.publicarPostagem(postagem02);
+		
+		
+		blog.listarPostagensPublicadas();
+		
+		
+		
+		
+		
+		
+		
+	//LIBERAR ACESSO A USUARIOS CADASTRADOS
+	//RESOVER OS METODOS QUE AINDA NÃO FORAM FEITOS
+		
+	}
+
+}

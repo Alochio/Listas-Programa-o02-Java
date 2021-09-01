@@ -1,0 +1,9 @@
+package controleDePedidos;
+
+public class Pedido {
+	
+	public void adicionaUmItem(){
+		
+	}
+	
+}

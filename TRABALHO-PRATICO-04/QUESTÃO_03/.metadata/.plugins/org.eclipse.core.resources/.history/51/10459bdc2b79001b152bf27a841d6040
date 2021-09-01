@@ -1,0 +1,21 @@
+package controleDePedidos;
+import controleDePedidos.Produto;
+
+public class ItemPedido {
+
+	private int quantidade;
+	
+	private Produto produto;
+	
+	public int getQuantidade() {
+		return this.quantidade;
+	}	
+	public Produto getProduto(){
+		return this.produto;
+	}
+
+	public ItemPedido(Produto produto, int quantidade){
+		this.produto.getCodigo() = this.produto.getCodigo();
+		this.quantidade = quantidade;
+	}
+}
