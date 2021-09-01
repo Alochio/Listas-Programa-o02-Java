@@ -1,0 +1,19 @@
+package formasGeometricas;
+
+public class FormasGeometricas {
+	
+	private String nome;
+	
+	protected FormasGeometricas(String nome){
+		this.nome = nome;
+	}
+	
+	public String getNome(){
+		return this.nome;
+	}
+
+	@Override
+	public String toString() {
+		return "Nome da forma: " + nome;
+	}
+}

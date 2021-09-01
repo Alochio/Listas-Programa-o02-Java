@@ -1,0 +1,11 @@
+package libExterna;
+
+public class MedidorFahrenheit {
+	
+	private double temperatura;
+	
+	public double getTemperaturaFahrenheit(){
+		return temperatura;
+	}
+
+}

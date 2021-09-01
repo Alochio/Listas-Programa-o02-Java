@@ -1,0 +1,24 @@
+package testaAdaptador;
+
+import java.util.List;
+
+import principal.*;
+
+public class TestaAdaptador {
+	public static void main(String[] args){
+		
+		List<Integer> lista = null;
+		lista.add(12);
+		lista.add(15);
+		lista.add(25);
+		lista.add(32);
+		lista.add(99);
+		
+		
+		
+		
+	
+		
+		
+	}
+}

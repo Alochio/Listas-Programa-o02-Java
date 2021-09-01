@@ -1,0 +1,9 @@
+package principal;
+
+public class adaptador extends Cliente{
+	
+	public adaptador(){
+		super(0);
+	}
+
+}

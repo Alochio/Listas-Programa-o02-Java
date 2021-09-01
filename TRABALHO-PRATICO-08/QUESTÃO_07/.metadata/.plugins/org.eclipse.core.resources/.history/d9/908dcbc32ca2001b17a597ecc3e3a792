@@ -1,0 +1,10 @@
+package testaAdaptador;
+
+import principal.*;
+
+public class TestaAdaptador {
+	public static void main(String[] args){
+		
+		
+	}
+}

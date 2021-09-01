@@ -1,0 +1,21 @@
+package testaFormasGeometricas;
+import formasGeometricas.*;
+
+
+public class TestaFormasGeometricas {
+	public static void main (String[] args){
+		
+		FormasGeometricas forma01 = CriaFormas.CriaForma("Quadrado");
+		System.out.println(forma01);
+		
+		FormasGeometricas forma02 = CriaFormas.CriaForma("Triangulo");
+		System.out.println(forma02);
+		
+		FormasGeometricas forma03 = CriaFormas.CriaForma("Retangulo");
+		System.out.println(forma03);
+		
+		
+		FormasGeometricas forma04 = CriaFormas.CriaForma("Elipse");
+		System.out.println(forma04);
+	}
+}

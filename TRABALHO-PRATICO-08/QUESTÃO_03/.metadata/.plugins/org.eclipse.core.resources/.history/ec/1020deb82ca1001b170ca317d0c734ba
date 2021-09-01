@@ -1,0 +1,8 @@
+package formasGeometricas;
+
+public class Retangulo extends FormasGeometricas{
+	
+	protected Retangulo(String nome){
+		super("Retangulo");
+	}
+}

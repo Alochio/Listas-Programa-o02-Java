@@ -1,0 +1,13 @@
+package testaFormasGeometricas;
+import formasGeometricas.CriaFormas;
+
+
+public class TestaFormasGeometricas {
+	public static void main (String[] args){
+		
+	
+		
+		
+		
+	}
+}

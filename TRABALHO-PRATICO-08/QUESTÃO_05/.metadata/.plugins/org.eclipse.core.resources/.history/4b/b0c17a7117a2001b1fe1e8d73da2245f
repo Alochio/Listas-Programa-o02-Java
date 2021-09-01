@@ -1,0 +1,8 @@
+package frabricaDeCarros;
+
+public class FiestaSedan {
+	
+	public void exibirInfoSedan(){
+		System.out.println("Informações do carro popular = nome: Fiesta Sedan || marca: Ford");
+	}
+}

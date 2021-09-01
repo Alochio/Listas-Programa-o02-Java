@@ -1,0 +1,12 @@
+package testeConversao;
+
+import libExterna.MedidorFahrenheit;
+import sistema.*;
+
+public class TesteConversao {
+
+	public double temperatura;
+	//temperatura = new MedidorFahrenheit();
+	
+	
+}

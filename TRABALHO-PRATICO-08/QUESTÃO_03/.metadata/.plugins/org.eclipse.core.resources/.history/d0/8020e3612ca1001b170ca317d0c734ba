@@ -1,0 +1,15 @@
+package formasGeometricas;
+import formasGeometricas.FormasGeometricas;
+
+public class CriaFormas {
+	
+	private FormasGeometricas novaForma;
+	
+	public void CriaForma(){
+		
+		
+		
+	}
+	
+	
+}

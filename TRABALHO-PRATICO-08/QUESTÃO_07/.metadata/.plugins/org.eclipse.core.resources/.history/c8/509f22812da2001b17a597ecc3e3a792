@@ -1,0 +1,20 @@
+package principal;
+
+import principal.*;
+
+public class Adaptador implements SomadorEsperado {
+
+	SomadorExistente somExist = new SomadorExistente();
+	
+
+	
+	@Override
+	public int somaVetor(int[] vetor) {
+		
+		
+		
+		
+		return 0;
+	}
+
+}

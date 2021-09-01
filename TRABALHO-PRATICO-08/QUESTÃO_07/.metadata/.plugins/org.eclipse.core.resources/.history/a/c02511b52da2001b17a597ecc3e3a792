@@ -1,0 +1,17 @@
+package principal;
+
+import principal.*;
+
+public class Adaptador implements SomadorEsperado {
+
+	private SomadorExistente somExist;
+	
+	public Adaptador(SomadorExistente somaExistente){
+		this.somExist = somaExistente;
+	}
+		
+	@Override
+	public int somaVetor(int[] vetor) {
+		return 0;
+	}
+}

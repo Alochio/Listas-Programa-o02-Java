@@ -1,0 +1,16 @@
+package sistema;
+
+public class MedidorCelcius implements MedidorCelciusIF {
+
+	private double temperatura;
+	private double celcius;
+	
+	@Override
+	public double medirTemperatura() {
+		celcius = (temperatura - 32)/1.8;
+		return celcius;
+	}
+	
+
+
+}

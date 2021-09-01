@@ -1,0 +1,10 @@
+package formasGeometricas;
+
+public class Triangulo {
+	
+	private String nome;
+	
+	protected Triangulo(String nome){
+		this.nome = nome;
+	}
+}

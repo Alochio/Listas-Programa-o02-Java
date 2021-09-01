@@ -1,0 +1,20 @@
+package sistema;
+
+public class Adaptador implements MedidorCelciusIF {
+	
+	private double temperatura;
+	private double celcius;
+	
+	@Override
+	public double medirTemperatura() {
+		System.out.println("temp01 = " + temperatura);
+		System.out.println("celcius01 = " + celcius);
+		
+		celcius = (temperatura - 32)/1.8;
+		
+		System.out.println("temp02= " + temperatura);
+		System.out.println("celcius02 = " + celcius);
+		
+		return celcius;
+	}
+}

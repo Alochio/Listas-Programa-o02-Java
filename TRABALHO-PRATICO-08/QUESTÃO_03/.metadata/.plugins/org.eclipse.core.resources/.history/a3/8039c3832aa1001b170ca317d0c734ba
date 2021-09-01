@@ -1,0 +1,10 @@
+package formasGeometricas;
+
+public class Quadrado {
+
+	private String nome;
+	
+	protected Quadrado(String nome){
+		this.nome = nome;
+	}
+}

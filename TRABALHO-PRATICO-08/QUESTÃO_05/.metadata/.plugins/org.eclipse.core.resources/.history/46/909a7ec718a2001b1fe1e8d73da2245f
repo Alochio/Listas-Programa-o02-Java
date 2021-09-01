@@ -1,0 +1,7 @@
+package frabricaDeCarros;
+
+public interface FabricaDeCarros {
+
+	public abstract void criaCarroSedan();
+	public abstract void criaCarroPopular();	
+}

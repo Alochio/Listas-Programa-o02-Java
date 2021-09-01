@@ -1,0 +1,10 @@
+package testaFrabricaDeCarros;
+import frabricaDeCarros.*;
+
+public class main {
+	
+	Fiesta car01 = new Fiesta();
+
+	car01.getInfoPopular();
+	
+}

@@ -1,0 +1,29 @@
+package testaFabricaDeCarros;
+
+import frabricaDeCarros.*;
+
+public class Cliente {
+	public static void main(String[] args){
+		
+		FabricaDeCarros fabrica = new FabricaFiat();
+		
+		CarroSedan car01 = fabrica.criaCarroSedan();
+		car01.exibirInfoSedan();
+		
+		CarroPopular car02 = fabrica.criaCarroPopular();
+		car02.exibirInfoPopular();
+		
+		
+		fabrica = new FabricaFord();
+		CarroSedan car03 = fabrica.criaCarroSedan();
+		car03.exibirInfoSedan();
+		
+		CarroPopular car04 = fabrica.criaCarroPopular();
+		car04.exibirInfoPopular();
+		
+		
+		
+		
+	}
+
+}

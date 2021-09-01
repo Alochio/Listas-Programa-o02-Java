@@ -1,0 +1,8 @@
+package producao;
+
+public class RT {
+
+	protected RT(){
+		super("Bola", "Cheddar", "De Peru", false);
+	}
+}

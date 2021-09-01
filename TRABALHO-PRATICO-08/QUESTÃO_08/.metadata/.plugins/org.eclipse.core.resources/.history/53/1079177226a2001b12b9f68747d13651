@@ -1,0 +1,18 @@
+package testeConversao;
+
+import libExterna.MedidorFahrenheit;
+import sistema.*;
+
+public class TesteConversao {
+	public static void main(String[] args){
+		
+	//	double tempetura;
+		
+		MedidorFahrenheit medidor = new MedidorFahrenheit();
+	
+		
+		medidor.getTemperaturaFahrenheit();
+		//MedidorCelcius adaptador = new MedidorCelcius();	
+		
+	}
+}

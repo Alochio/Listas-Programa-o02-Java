@@ -1,0 +1,14 @@
+package lanchonete;
+
+import producao.*;
+
+public class testaConstrucao {
+	public static void main(String[] args){
+		
+		Lanche pedido01 = ConstrucaoLanche.FactoryLanche("JP");
+		System.out.println(pedido01);
+		
+		
+		
+	}
+}

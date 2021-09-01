@@ -1,0 +1,11 @@
+package principal;
+import estrutura.LoginSingleton;
+
+public class TestaLoginSingleton {
+	public static void main(String[] args){
+		
+		
+		
+		
+	}	
+}

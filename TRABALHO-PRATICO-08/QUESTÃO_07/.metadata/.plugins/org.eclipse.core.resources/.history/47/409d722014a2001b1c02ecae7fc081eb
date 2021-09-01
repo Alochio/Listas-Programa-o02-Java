@@ -1,0 +1,11 @@
+package principal;
+
+public class adaptador extends SomadorExistente{
+	
+	private SomadorExistente objetoSomadorExistente;
+	
+	public adaptador(SomadorExistente somExistente){
+		this.objetoSomadorExistente = somExistente;
+	}
+
+}

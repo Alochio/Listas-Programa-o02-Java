@@ -1,0 +1,10 @@
+package formasGeometricas;
+
+public class Quadrado extends FormasGeometricas{
+
+	private String nome;
+	
+	protected Quadrado(){
+		super("Quadrado");
+	}
+}

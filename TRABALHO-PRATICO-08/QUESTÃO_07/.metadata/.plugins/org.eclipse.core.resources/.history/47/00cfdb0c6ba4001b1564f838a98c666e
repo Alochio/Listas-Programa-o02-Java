@@ -1,0 +1,24 @@
+package principal;
+
+import java.util.List;
+
+import principal.SomadorExistente;
+
+public class Adaptador {
+
+	int[] vetor = new int[100];
+	
+	Adaptador(List<Integer> lista){
+		for(int cont = 0; lista.get(cont) != null; cont++){
+			
+		}
+		
+		
+		
+	}
+	
+	
+
+	
+	
+}

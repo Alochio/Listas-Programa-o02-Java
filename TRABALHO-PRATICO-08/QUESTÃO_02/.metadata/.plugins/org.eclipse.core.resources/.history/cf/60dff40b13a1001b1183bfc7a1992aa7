@@ -1,0 +1,26 @@
+package estrutura;
+
+public class IncrementalSingleton {
+	
+	private static IncrementalSingleton instancia;
+	
+	private static int count = 0;
+	private int numero;
+	
+	private IncrementalSingleton(){
+		numero = ++count;
+	}
+	
+	public static IncrementalSingleton GetInstancia(){
+			
+		if(instancia == null)
+			instancia = new IncrementalSingleton();
+		
+		return instancia;
+	}
+		
+	@Override
+	public String toString() {
+		return "IncrementalSingleton " + numero;
+	}
+}

@@ -1,0 +1,7 @@
+package frabricaDeCarros;
+
+public abstract class FabricaDeCarros {
+
+	public abstract void criaCarroSedan();
+	public abstract void criaCarroPopular();	
+}

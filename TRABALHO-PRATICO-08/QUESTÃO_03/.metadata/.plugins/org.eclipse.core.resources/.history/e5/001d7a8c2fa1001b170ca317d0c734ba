@@ -1,0 +1,8 @@
+package formasGeometricas;
+
+public class Quadrado extends FormasGeometricas{
+
+	protected Quadrado(){
+		super("Quadrado");
+	}
+}

@@ -1,0 +1,15 @@
+package frabricaDeCarros;
+
+import frabricaDeCarros.FiestaSedan;
+import frabricaDeCarros.Siena;
+
+public class CarroSedan {
+
+	public void exibirInfoSedan(){
+		
+		
+		
+	}
+	
+	
+}

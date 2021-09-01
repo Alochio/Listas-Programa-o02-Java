@@ -1,0 +1,9 @@
+package producao;
+
+public class Pao {
+	private String tipo;
+	
+		protected Pao(String tipo){
+			this.tipo = tipo;
+		}
+}

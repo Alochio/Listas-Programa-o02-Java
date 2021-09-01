@@ -1,0 +1,11 @@
+package sistema;
+
+public class Adaptador implements MedidorCelciusIF {
+
+	@Override
+	public double medirTemperatura() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

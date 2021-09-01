@@ -1,0 +1,14 @@
+package libExterna;
+
+import java.util.Random;
+
+public class MedidorFahrenheit {
+	
+	private double temperatura;
+	
+	public double getTemperaturaFahrenheit(){
+		temperatura = new Random().nextDouble(); 
+		System.out.println("saindo do get: " + temperatura);
+		return temperatura;
+	}
+}

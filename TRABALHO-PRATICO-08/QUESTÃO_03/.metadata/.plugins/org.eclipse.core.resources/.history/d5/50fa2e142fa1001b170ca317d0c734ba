@@ -1,0 +1,13 @@
+package testaFormasGeometricas;
+import formasGeometricas.*;
+
+
+public class TestaFormasGeometricas {
+	public static void main (String[] args){
+		
+		CriaFormas.CriaForma("Quadrado");
+		System.out.println(CriaFromas);
+		
+		
+	}
+}

@@ -1,0 +1,14 @@
+package frabricaDeCarros;
+
+public class FabricaFord implements FabricaDeCarros{
+
+	@Override
+	public void criaCarroSedan(){
+		
+	}
+	
+	@Override
+	public void criaCarroPopular(){
+		
+	}
+}

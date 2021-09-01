@@ -1,0 +1,11 @@
+package principal;
+
+public class Clinte0 implements SomadorEsperado {
+
+	@Override
+	public int somaVetor(int[] vetor) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

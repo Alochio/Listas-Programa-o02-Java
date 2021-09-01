@@ -1,0 +1,10 @@
+package formasGeometricas;
+
+public class Retangulo {
+	
+	private String nome;
+	
+	protected Retangulo(String nome){
+		this.nome = nome;
+	}
+}

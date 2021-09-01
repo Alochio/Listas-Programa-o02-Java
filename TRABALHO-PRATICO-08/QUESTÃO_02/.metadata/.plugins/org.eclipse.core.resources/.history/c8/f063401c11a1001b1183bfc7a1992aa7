@@ -1,0 +1,8 @@
+package principal;
+import estrutura.IncrementalSingleton;
+
+public class TesteIncrementalSingleton {
+	public static void main (String[] args){
+	
+}
+}

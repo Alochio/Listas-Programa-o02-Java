@@ -1,0 +1,25 @@
+//CLASSE QUE USAREMOS COM O INTUITO DE CRIAR AS NOSSAS FORMAS, PARA QUE SÓ POSSAM SER CIADAS POR AQUI
+package formasGeometricas;
+
+public class CriaFormas {
+
+	//MÉTODO PARA A CRIAÇÃO DAS FORMAS GEOMÉTRICAS
+	public static FormasGeometricas CriaForma(String forma){
+		
+		//CASO SEJA QUADRADO, VAI USAR UMA CLASSE JÁ CRIADA
+		if(forma.equals("Quadrado"))
+			return new Quadrado();
+		
+		//CASO SEJA TRINGULO, VAI USAR UMA CLASSE JÁ CRIADA
+		else if(forma.equals("Triangulo"))
+			return new Triangulo();
+		
+		//CASO SEJA RETÂNGULO, VAI USAR UMA CLASSE JÁ CRIADA
+		else if(forma.equals("Retangulo"))
+			return new Retangulo();
+		
+		//CASO NÃO SEJA NENHUMA DAS ANTERIORES, IRÁ USAR O CONSTRUTOR DE FOMRAS GEOMETRICAS PARA CRIAR UMA NOVA FORMA
+		else
+			return new FormasGeometricas(forma);	
+	}	
+}

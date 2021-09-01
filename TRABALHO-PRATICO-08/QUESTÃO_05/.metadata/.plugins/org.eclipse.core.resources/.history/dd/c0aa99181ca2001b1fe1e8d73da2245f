@@ -1,0 +1,15 @@
+package frabricaDeCarros;
+
+//CLASSE QUE IMPLEMENTA A INTERFACDE FABRICADECARROS
+public class FabricaFord implements FabricaDeCarros{
+
+	@Override
+	public CarroSedan criaCarroSedan(){
+		return new FiestaSedan();
+	}
+	
+	@Override
+	public CarroPopular criaCarroPopular(){
+		return new Fiesta();
+	}
+}

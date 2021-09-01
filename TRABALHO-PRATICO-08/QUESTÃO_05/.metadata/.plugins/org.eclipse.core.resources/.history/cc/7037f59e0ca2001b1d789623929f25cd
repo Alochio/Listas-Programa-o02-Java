@@ -1,0 +1,9 @@
+package frabricaDeCarros;
+import frabricaDeCarros.CarroPopular;
+
+public abstract class FabricaCarroPopular{
+
+	public void criarCarroPopular(){
+		CarroPopular carPopular = new CarroPopular();
+	}	
+}

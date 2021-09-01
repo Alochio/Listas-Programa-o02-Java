@@ -1,0 +1,16 @@
+package principal;
+
+import java.util.Random;
+
+import principal.SomadorExistente;
+
+public class Adaptador {
+
+	
+	SomadorExistente somadorExistente = new SomadorExistente();
+	
+	int[] vetorAuxiliar = (int)somadorExistente.clone();
+
+	
+	
+}

@@ -1,0 +1,16 @@
+package principal;
+import estrutura.LoginSingleton;
+
+public class TestaLoginSingleton {
+	public static void main(String[] args){
+		
+		LoginSingleton admin = LoginSingleton.GetInstancia();
+		
+		admin.setLogin("Vinicius");
+		admin.setSenha("alochio");
+		
+		admin.toString();
+		
+		
+	}	
+}
