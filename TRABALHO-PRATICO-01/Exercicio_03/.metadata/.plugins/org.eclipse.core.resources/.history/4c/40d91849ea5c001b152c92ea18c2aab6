@@ -1,0 +1,26 @@
+package principal;
+
+public class Main {
+	public static void main(String[] args){
+	
+	int n = 10;
+	System.out.println(metodoRecursivo(n));
+	
+	}
+	
+	public static int metodoRecursivo(int n){
+		
+		if(n == 1){
+			return 1;
+		}
+		if(n == 2){
+			return 2;
+		}
+		if(n > 2){
+			return 2*(n-1)+3*(n-2);
+		}
+		
+		return n;
+	}
+
+}

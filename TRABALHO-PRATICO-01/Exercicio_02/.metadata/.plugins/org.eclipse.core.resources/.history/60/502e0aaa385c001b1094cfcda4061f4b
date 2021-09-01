@@ -1,0 +1,98 @@
+package principal;
+import java.util.Scanner;
+
+public class Main {
+	public  static void main(String[] args){
+		
+		int n;
+		
+		System.out.print("Quantos numeros deseja digitar:");
+		
+		Scanner scan = new Scanner(System.in);
+		n = scan.nextInt();
+		
+		int[] vet = new int[n];
+		
+		lerValores(vet,n);
+		
+			
+	}
+	public static int lerValores(int vet[], int n){
+		
+		System.out.println("Agora digite os numeros:");
+		
+		Scanner sc = new Scanner(System.in);
+		
+		for(int cont = 0; cont < vet.length; cont++){
+			System.out.print("vet [" + cont + "] = ");
+			vet[cont] = sc.nextInt();
+		}
+		
+		System.out.println("Valores salvos!");
+		
+		numerosPrimos(vet);
+		return n;
+	}
+	
+	public static void numerosPrimos(int vet[]){
+		
+		int[] vetPrimos = new int[vet.length];
+		int[] posicaoPrimos = new int [vet.length];
+		
+		for(int cont = 0; cont < vet.length; cont++){
+			if ( vet[cont] % 2 == 0){
+				vetPrimos[cont] = vet[cont];
+				posicaoPrimos[cont] = cont; 
+			}
+			if ( vet[cont] % 3 == 0){
+				vetPrimos[cont] = vet[cont];
+				posicaoPrimos[cont] = cont; 
+			}
+			if ( vet[cont] % 5 == 0){
+				vetPrimos[cont] = vet[cont];
+				posicaoPrimos[cont] = cont; 
+			}
+			if ( vet[cont] % 7 == 0){
+				vetPrimos[cont] = vet[cont];
+				posicaoPrimos[cont] = cont; 
+			}
+			if ( vet[cont] % 11 == 0){
+				vetPrimos[cont] = vet[cont];
+				posicaoPrimos[cont] = cont; 
+			}
+			if ( vet[cont] % 13 == 0){
+				vetPrimos[cont] = vet[cont];
+				posicaoPrimos[cont] = cont; 
+			}
+			if ( vet[cont] % 17 == 0){
+				vetPrimos[cont] = vet[cont];
+				posicaoPrimos[cont] = cont; 
+			}
+			if ( vet[cont] % 19 == 0){
+				vetPrimos[cont] = vet[cont];
+				posicaoPrimos[cont] = cont; 
+			}
+			if ( vet[cont] % 23 == 0){
+				vetPrimos[cont] = vet[cont];
+				posicaoPrimos[cont] = cont; 
+			}
+			if ( vet[cont] % 29 == 0){
+				vetPrimos[cont] = vet[cont];
+				posicaoPrimos[cont] = cont; 
+			}
+			if ( vet[cont] % 31 == 0){
+				vetPrimos[cont] = vet[cont];
+				posicaoPrimos[cont] = cont; 
+			}
+			
+		}
+		
+		System.out.println("Dos numeros digitados, são primos: ");
+		
+		for(int cont = 0; cont < vet.length; cont++){
+			System.out.print(vetPrimos[cont] + " ");
+		}
+		
+	}
+
+}

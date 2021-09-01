@@ -1,0 +1,95 @@
+package principal;
+import java.util.Scanner;
+
+public class Main {
+	public  static void main(String[] args){
+		
+		int n;
+		
+		System.out.print("Quantos numeros deseja digitar:");
+		
+		Scanner scan = new Scanner(System.in);
+		n = scan.nextInt();
+		
+		int[] vet = new int[n];
+		
+		lerValores(vet,n);
+		
+			
+	}
+	public static int lerValores(int vet[], int n){
+		
+		System.out.println("Agora digite os numeros:");
+		
+		Scanner sc = new Scanner(System.in);
+		
+		for(int cont = 0; cont < vet.length; cont++){
+			System.out.print("vet [" + cont + "] = ");
+			vet[cont] = sc.nextInt();
+		}
+		
+		System.out.println("Valores salvos!");
+		
+		numerosPrimos(vet);
+		return n;
+	}
+	
+public static void numerosPrimos(int vet[]){
+		
+		int[] vetPrimos = new int[vet.length];
+		int[] posicaoPrimos = new int [vet.length];
+		
+		
+		//inicia todas as posições com -1 para adicionar futuros numeros onde ainda está com -1
+		for (int i = 0; i < vet.length; i ++){
+		    vetPrimos[i] = -1;
+		    posicaoPrimos[i]=-1;
+		}
+
+		boolean aux = true; //informa se é primo ou não
+		
+		
+		for(int i = 0; i < vet.length; i++){
+		    
+		    aux = true; //reinicia a variavel
+		    
+			for(int j = 0; j < vet[i]; j++){
+			   //analisa se é primo 
+			   if (j > 1) {
+				if (vet[i] % j == 0 && j != vet[i]){
+					aux = false;
+				}
+			   }
+			}
+			
+			if (aux == true){
+			    //adiciona os numeros ao vetor 
+			    int aux2 = -1;
+                 for(int x=0; x < vetPrimos.length; x++){
+			        if(vetPrimos[x] == -1 && aux2 == -1){
+    			        vetPrimos[x] = vet[i];
+			            posicaoPrimos[x] = i; 
+			            aux2 = 0;
+		        	        }
+                     }
+			}
+		} 
+		
+		System.out.println("Dos numeros digitados, são primos: ");
+		
+		for(int cont = 0; cont < vet.length; cont++){
+		    if(vetPrimos[cont] != -1){
+			System.out.print(vetPrimos[cont] + " ");
+		    }
+		}
+		
+		System.out.println();
+		System.out.println("Posição: ");
+		
+		for(int cont = 0; cont < vet.length; cont++){
+		    if(posicaoPrimos[cont] != -1){
+			System.out.print(posicaoPrimos[cont] + " ");
+		    }
+		}
+	}
+}

@@ -1,0 +1,207 @@
+package principal;
+import java.util.Scanner;
+
+public class Main { 
+	public static void main(String[] args){
+		
+		int i = 3; // valor para a quantidade de linhas da matriz (10 linhas, ou seja, 10 alunos)
+		int j = 4; // valor para a quantidade de colunas da matriz (4 colunas, ou seja, 4 informações sobre os alunos)
+		String ano = "2021"; //ano atual
+		String semestre = "1"; //semestre atual
+		 
+		int[][] dados = new int[i][j]; //matriz principal
+		String [] codigoMatricula = new String [i];
+		
+		lerValores(dados, codigoMatricula, i, j, ano, semestre); //chamando o método lerValoress
+	}
+	
+	public static void lerValores(int dados[][],String codigoMatricula[], int i, int j, String ano, String semestre){ //metodo lerValores
+		
+		Scanner scan = new Scanner(System.in);
+
+		int[] matricula = new int[i];
+		 
+		int aux = -1, aux2 = -1, aux3 = -1; //variaveis auxiliares
+		
+		for (int cont = 0; cont < dados.length; cont++){ //este laço serve para capturar as informações de aluno por aluno
+			System.out.println("\tDigite as informações do aluno (" + cont + ")\n");
+			
+			System.out.print("Matricula (deve conter 3 digitos): ");
+			  aux2 = scan.nextInt();
+			 
+			 if (aux2 > 99 && aux2 < 1000){ //condição para o numero digitado conter 3 digitos
+				matricula[cont] = aux2;
+				 
+			  }else{
+				  System.out.println("VALOR INVALIDO!!");
+				  cont--;
+				  aux3 = 0;
+			  }
+		    
+			if (aux3 == -1){
+				for(int cont2 = 0; cont2 < dados[cont].length; cont2++){
+					switch (cont2) { //usei o Switch para poder colocar as informações na coluna certa na matriz
+					    
+					case 1: //para colocar as informações na coluna 1
+						  System.out.print("Sexo(0 = Feminino/ 1 = Masculino) : ");
+						  aux = scan.nextInt();
+						  
+						  if (aux == 0 || aux == 1){ //condição para que possa somente ser digitados os valores 0 e 1
+							  dados[cont][cont2] = aux;
+							  aux = -1;
+						  }else{ //caso o valor seja diferente de 0 e 1
+							  System.out.println("VALOR INVALIDO!!"); //imprime VALOR INVALIDO
+							  aux = -1;
+							  cont2--;
+						  }
+					    break;
+					 
+					case 2: //para colocar as informações na coluna 2
+						 System.out.print("Código do Curso (valor com 4 digitos): ");
+						aux = scan.nextInt();
+						  
+						  if(aux >= 999 && aux <= 10000){ //condição que faz com que só possa ser digitada uma nota que esteja entre 0 e 10
+							  dados[cont][cont2] = aux;
+							  aux = -1;
+						  }else{ //caso seja digitado um valor diferente do desejado
+							  System.out.println("VALOR INVALIDO!!"); //Imprime VALOR INVALIDO
+							  aux = -1;
+							  cont2--;
+						  }
+						  break;
+					    
+					  
+					case 3: //para colocar as informações na coluna 3
+						  System.out.print("CR (0 - 10) : ");
+						  aux = scan.nextInt();
+						  
+						  if(aux >= 0 && aux <= 10){ //condição que faz com que só possa ser digitada uma nota que esteja entre 0 e 10
+							  dados[cont][cont2] = aux;
+							  aux = -1;
+						  }else{ //caso seja digitado um valor diferente do desejado
+							  System.out.println("VALOR INVALIDO!!"); //Imprime VALOR INVALIDO
+							  aux = -1;
+							  cont2--;
+						  }
+						  break;
+					}//fim switch
+			} //fim do segundo for
+			}else{
+				aux3 = -1;
+			}
+		} //fim do primeiro for	
+				
+
+		for(int cont = 0; cont < i; cont++){
+			Integer.toString(matricula[cont], dados[cont][2]);
+			codigoMatricula[cont] = ano + semestre + dados[cont][2] + matricula[cont];
+		}
+				
+		for(int cont =0 ; cont < dados.length; cont++){
+			System.out.print(codigoMatricula[cont]+"\t");
+			for(int cont2 = 1; cont2 < dados[cont].length; cont2++){
+				System.out.print(dados[cont][cont2]+"\t");
+			}
+			System.out.println("");
+		}
+		
+		imprimir(dados,codigoMatricula, i, j); //chamando o metodo imprimir
+	} //fim ler valores
+
+	
+	public static void imprimir(int dados[][],String codigoMatricula[], int i, int j){ //metodo imprimir
+		
+		System.out.println("\n\t     Informações dos alunos informados: ");
+		System.out.println("\t(Matricula - Sexo - Codigo do Curso - CR)");
+		
+		for (int cont = 0; cont < dados.length; cont++){ //este laço serve para mostrar na tela todos os alunos que foram capturados
+			System.out.print(codigoMatricula[cont] + "\t");
+			for(int cont2 = 1; cont2 < dados[cont].length; cont2++){
+				System.out.print(dados[cont][cont2] + "\t");
+			}
+			System.out.println("");
+		}
+				maiorCR(dados,codigoMatricula, i, j); //chamando método maiorCR
+	}//fim imprimir
+	
+	public static void maiorCR(int dados[][],String codigoMatricula[], int i, int j){ //método maiorCR
+		
+		Scanner scan = new Scanner(System.in); 
+		int comparar;
+		
+		System.out.print("\n\nDigite o código do curso que deseja analizar: ");
+		comparar = scan.nextInt(); //lendo no teclado qual o curso que deseja saber os alunos com maior coeficiente
+		
+		
+		for(int cont = 0; cont == 0; ){
+			if(comparar > 999 && comparar < 10000){
+				cont = 1;
+			}else{
+				System.out.print("VALOR INVALIDO!!\nDigite novamente: ");
+				comparar = scan.nextInt();
+				cont = 0;
+			}	
+		}
+		
+		int aux = -1, aux2 = -1, aux3 = -1;
+		int[] posicao = new int[i];
+		
+		for(int cont = 0; cont < posicao.length; cont++){
+			posicao[cont] = -1;
+		}
+		
+		
+		for (int cont = 0; cont < dados.length; cont++){
+				if (dados[cont][2] == comparar){
+					if(aux2 == -1){
+						if(dados[cont][3] > aux){
+							aux = dados[cont][3];
+							aux2 = 0;
+							aux3 = cont;
+							posicao[aux3] = cont;	
+						}
+					}
+					if(aux2 == 0){
+						if(dados[cont][3] > aux){
+							aux = dados[cont][3];
+							posicao[aux3] = -1;
+							aux3 = cont;
+							posicao[aux3] = cont;
+							
+						}
+						if(dados[cont][3] == aux){
+							aux3 = cont;
+							posicao[aux3] = cont;
+						}
+					}
+				}//analiza se o aluno está matriculado no curso solicitado	
+		}		
+			if(aux2 == -1){
+				System.out.println("VALOR INVALIDO!!");
+			}
+			
+			
+		for(int cont = 0; cont < dados.length; cont++){
+			if(posicao[cont] != -1){
+				System.out.print(codigoMatricula[cont] + "\t");
+				for(int cont2 = 1;cont2 < dados[cont].length; cont2++){
+					System.out.print(dados[cont][cont2] + "\t");
+				}
+				System.out.println("");
+			}
+			
+			
+			
+		}
+			
+			
+		
+		
+		
+		
+		
+		
+	
+			
+		}//fim maiorCR
+}

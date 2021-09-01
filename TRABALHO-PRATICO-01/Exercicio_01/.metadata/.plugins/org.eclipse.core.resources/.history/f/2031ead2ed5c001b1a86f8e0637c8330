@@ -1,0 +1,42 @@
+package principal;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args){
+		
+		int n;
+		
+		System.out.print("Digite quantos numeros deseja digitar: ");
+		
+		Scanner sc = new Scanner(System.in);
+		n = sc.nextInt();
+		
+		float[] vet = new float[n];
+		
+		System.out.println("Agora digite os números que deseja verificar: ");
+		
+		for(int cont = 0; cont < n; cont++){
+			System.out.print("vet[" + cont + "] = ");
+			vet[cont] = sc.nextFloat();
+		}
+		
+		int numerosNegativos;
+		
+		numerosNegativos = negativos(vet);
+		
+		System.out.println("Foram digitados " + numerosNegativos + " numeros negativos!");
+		
+			}
+
+	public static int negativos(float vet[]){
+		
+		int contNegativos = 0;
+		
+		for(int cont = 0; cont < vet.length; cont++){
+			if(vet[cont] < 0){
+				contNegativos++;
+			}
+		}
+		return contNegativos;
+	}
+}
