@@ -1,0 +1,36 @@
+package empresa;
+
+public class Main {
+	public static void main(String[] args){
+		
+//CRIANDO EMPREGADO (1º EMPREGADO)
+		System.out.println("\t Empregado Criado: ");
+		Empregado empregado01 = new Empregado("Vinicius", 3000.50);
+		empregado01.printInfo();
+		
+//EMPREGADO COM O MÉTODO DE PROMOÇÃO
+		System.out.println("\t Empregado após promoção: ");
+		empregado01.setSalario(empregado01.promocao(empregado01.getSalario()));
+		empregado01.printInfo();
+			
+//EMPREGADO COM O MÉTODO DE GRATIFICAÇÃO
+		System.out.println("\t Empregado após gratificação");
+		empregado01.setSalario(empregado01.gratificacao(empregado01.getSalario()));
+		empregado01.printInfo();
+	
+
+		System.out.println("TESTANDO STATIC - NUMERO DE FUNCIONARIOS CADASTRADOS\n");
+		
+		
+//TESTANDO O MÉTODO STATIC PARA CONTAR O NUMERO DE FUNCIONARIOS DA EMPRESA
+		System.out.println("Numero de funcionarios criados: " + empregado01.getNumeroDeFuncionarios());
+//2º EMPREGADO
+		Empregado empregado02 = new Empregado("João", 4000.50);
+		System.out.println("Numero de funcionarios criados: " + empregado01.getNumeroDeFuncionarios());
+//3º EMPREGADO
+		Empregado empregado03 = new Empregado("Andre", 3045.50);
+		System.out.println("Numero de funcionarios criados: " + empregado01.getNumeroDeFuncionarios());
+	}
+	
+	
+}

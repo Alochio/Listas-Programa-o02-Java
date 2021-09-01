@@ -1,0 +1,16 @@
+package exercicio_03;
+
+
+public class Main {
+	public static void main(String[] args){
+		
+	Elevador elevador = new Elevador();
+	
+	elevador.setInicialliza(5,10);
+	
+	int z = elevador.getCapacidade();
+	
+	System.out.print(z);
+		
+	}
+}

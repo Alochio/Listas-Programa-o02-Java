@@ -1,0 +1,29 @@
+package exercicio_03;
+
+
+public class Main {
+	public static void main(String[] args){
+		
+	Elevador elevador = new Elevador();
+	
+	elevador.setInicializa(10, 12);
+	
+	System.out.print(elevador.getOcupacaoAtual());
+	System.out.print("\n");
+	
+	elevador.setEntra(elevador.getCapacidade(), elevador.getOcupacaoAtual());
+	System.out.print(elevador.getOcupacaoAtual());
+	
+	
+	
+	
+	elevador.setSai(elevador.getOcupacaoAtual());
+	System.out.print("\n");
+	System.out.print(elevador.getOcupacaoAtual());
+	
+	
+	
+	
+		
+	}
+}

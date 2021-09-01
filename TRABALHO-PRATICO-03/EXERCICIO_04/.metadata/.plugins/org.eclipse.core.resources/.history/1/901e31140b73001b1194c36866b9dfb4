@@ -1,0 +1,28 @@
+package empresa;
+
+public class Main {
+	public static void main(String[] args){
+		
+//CRIANDO EMPREGADO
+		System.out.println("\t Empregado Criado: ");
+		Empregado empregado01 = new Empregado("Vinicius", 3000.50);
+		empregado01.printInfo();
+		
+//EMPREGADO COM O MÉTODO DE PROMOÇÃO
+		System.out.println("\t Empregado após promoção: ");
+		empregado01.setSalario(empregado01.promocao(empregado01.getSalario()));
+		empregado01.printInfo();
+			
+//EMPREGADO COM O MÉTODO DE GRATIFICAÇÃO
+		System.out.println("\t Empregado após gratificação");
+		empregado01.setSalario(empregado01.gratificacao(empregado01.getSalario()));
+		empregado01.printInfo();
+	
+
+		Empregado empregado02 = new Empregado("Vinicius", 3000.50);
+		System.out.print(empregado01.getNumeroDeFuncionarios());
+		
+	}
+	
+	
+}

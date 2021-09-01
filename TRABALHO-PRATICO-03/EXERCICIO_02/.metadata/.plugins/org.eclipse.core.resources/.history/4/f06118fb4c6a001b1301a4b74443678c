@@ -1,0 +1,88 @@
+package principal;
+import java.util.Scanner;
+
+public class Matriz {
+
+	private int linhas, colunas;
+	int[][] matriz = new int[50][50];
+	int[][] matrizTransposta = new int[50][50];
+	int a = 0;
+	
+	Scanner scan = new Scanner(System.in);
+	
+	public void setLinhas(int linhas){
+		this.linhas = linhas;
+		
+	}
+	public int getLinhas(){
+		return this.linhas;
+	}
+	
+	
+	public void setColunas(int colunas){
+		this.colunas = colunas;
+	}
+	public int getColunas(){
+		return this.colunas;
+	}
+		
+	public void preencherMatriz(){
+		System.out.println("Preencha a matriz: ");
+		
+			for(int cont = 0; cont < linhas; cont++){
+				for (int cont2 = 0; cont2 < colunas; cont2++){
+					System.out.print("[" + cont + "][" + cont2 + "] = ");
+					matriz[cont][cont2] = scan.nextInt();
+				}
+			}
+
+	}
+	
+	public void editarValor(int i, int j){
+		System.out.print("Editando valor da posição [" + i + "][" + j + "] = ");
+		matriz[i][j] = scan.nextInt();
+		
+	}
+	
+	public void transporMatriz(){
+		if (linhas == colunas){
+			for (int i = 0; i < linhas; i++){
+				for (int j = 0; j < colunas; j++){
+					matrizTransposta[j][i] = matriz[i][j];
+				}
+			}
+		a = 1;
+		}
+	}
+	
+	public void imprimeMatriz(){
+	System.out.println("-----------------------------------------------------------");
+	System.out.println("\t Matriz digitada: ");	
+		for(int cont = 0; cont < linhas; cont++){
+			for(int cont2 = 0; cont2 < colunas; cont2++){
+				System.out.print(matriz[cont][cont2] + " ");				
+			}
+			System.out.println("");
+		}	
+	System.out.println("-----------------------------------------------------------");
+	}
+	
+	public void imprimeMatrizTransposta(){
+
+		if (a == 1){
+			System.out.println("-----------------------------------------------------------");
+			System.out.println("\t Matriz Transposta: ");	
+				for(int cont = 0; cont < linhas; cont++){
+					for(int cont2 = 0; cont2 < colunas; cont2++){
+						System.out.print(matrizTransposta[cont][cont2] + " ");				
+					}
+				System.out.println("");
+				}	
+			System.out.println("-----------------------------------------------------------");
+		}
+		else{
+			System.out.println("Essa matriz não é quadrada, então não possui transposta!");
+		}
+		
+	}
+}

@@ -1,0 +1,23 @@
+package principal;
+
+public class Main {
+	public static void main(String[] args){
+		
+		Matriz.setLinhas(2);
+		Matriz.setColunas(2);
+		
+		
+		Matriz matriz = new Matriz();
+		
+		matriz.preencherMatriz();
+		
+		matriz.editarValor(1, 1);
+		
+		matriz.transporMatriz();
+	
+		matriz.imprimeMatriz();
+		
+		matriz.imprimeMatrizTransposta();
+		
+	}
+}
