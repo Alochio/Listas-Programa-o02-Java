@@ -1,8 +1,0 @@
-package frabricaDeCarros;
-
-public class Palio {
-
-	public void getInfoPopular(){
-		System.out.println("Informações do carro popular = nome: Palio || marca: Fiat");
-	}
-}

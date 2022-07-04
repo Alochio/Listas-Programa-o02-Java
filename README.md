@@ -1,4 +1,5 @@
-# Listas-Java
-Listas de exercícios resolvidas na matéria de Programação 2 na Universidade Federal de Ouro Preto, utilizando a linguagem JAVA.
+# Trabalhos-Programacao2-Java
 
-Todas as listas possuem os enunciados das questões dentro da pasta.
+Neste repositório, estão todas as listas que eu fiz quando fiz a matéria Programação de computadores 2, na UFOP.
+
+Todos os enunciados estão dentro das pastas dos arquivos.

@@ -1,8 +1,0 @@
-package estrutura;
-
-public class Bicicleta extends Veiculo{
-
-	public float acelerar(float velocidade){
-		return velocidade;
-	}
-}

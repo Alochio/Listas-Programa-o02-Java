@@ -1,7 +1,0 @@
-package frabricaDeCarros;
-
-public interface FabricaDeCarros {
-
-	public abstract CarroSedan criaCarroSedan();
-	public abstract CarroPopular criaCarroPopular();	
-}

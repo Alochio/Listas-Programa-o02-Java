@@ -1,6 +1,0 @@
-package frabricaDeCarros;
-
-public abstract class FabricaCarroPopular{
-
-	public abstract void criarCarroPopular();	
-}

@@ -1,9 +1,0 @@
-package principal;
-import estrutura.Incremental;
-
-public class TesteIncremental {
-	public static void main (String[] args){
-		
-		
-	}
-}

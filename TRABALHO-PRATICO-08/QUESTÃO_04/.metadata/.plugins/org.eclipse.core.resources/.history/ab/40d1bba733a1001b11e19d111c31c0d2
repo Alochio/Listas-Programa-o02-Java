@@ -1,8 +1,0 @@
-package producao;
-
-public class Lanche {
-
-	protected Lanche(String pao, String queijo, String presunto, String salada){
-		
-	}
-}

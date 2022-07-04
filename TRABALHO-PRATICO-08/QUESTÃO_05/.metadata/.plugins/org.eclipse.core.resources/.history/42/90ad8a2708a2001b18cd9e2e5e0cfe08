@@ -1,9 +1,0 @@
-package frabricaDeCarros;
-
-public class Fiesta {
-	
-	public void getInfoPopular(){
-		
-	}
-
-}

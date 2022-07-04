@@ -1,7 +1,0 @@
-package loja;
-
-public interface iLoja {
-	
-	public void printDetalhes(Object objeto, int posiDaMidia);
-
-}

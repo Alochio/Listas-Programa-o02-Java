@@ -1,7 +1,0 @@
-package frabricaDeCarros;
-
-public class Siena implements CarroSedan{
-	public void exibirInfoSedan(){
-		System.out.println("Informações do carro popular = nome: Siena || marca: Fiat");
-	}
-}

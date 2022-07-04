@@ -1,8 +1,0 @@
-package frabricaDeCarros;
-
-public class Fiesta {
-	
-	public void exibirInfoPopular(){
-		System.out.println("Informações do carro popular = nome: Fiesta || marca: Ford");
-	}
-}

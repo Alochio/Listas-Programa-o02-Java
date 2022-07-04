@@ -1,8 +1,0 @@
-package formasGeometricas;
-
-public class Retangulo extends FormasGeometricas{
-	
-	protected Retangulo(){
-		super("Retangulo");
-	}
-}

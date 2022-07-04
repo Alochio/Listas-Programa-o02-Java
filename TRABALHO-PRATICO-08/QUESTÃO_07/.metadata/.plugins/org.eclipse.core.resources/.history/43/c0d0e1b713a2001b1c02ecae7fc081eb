@@ -1,9 +1,0 @@
-package principal;
-
-public class adaptador extends SomadorExistente{
-	
-	public adaptador(SomadorExistente somExistente){
-		
-	}
-
-}

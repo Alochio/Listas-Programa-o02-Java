@@ -1,8 +1,0 @@
-package principal;
-
-public class Miseravel extends Pessoa{
-
-	public void mendinga(){
-		System.out.println("Esta pessoa é mendinga!");
-	}
-}
